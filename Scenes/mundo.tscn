@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://clraytyru5wid" path="res://Scenes/tree_3d.tscn" id="1_4cw5y"]
 [ext_resource type="Texture2D" uid="uid://cgphrbo0diibg" path="res://Textures/rocky_terrain_02_diff_4k.jpg" id="1_uqtxj"]
 [ext_resource type="PackedScene" uid="uid://cpxle3usnkhqf" path="res://Scenes/player.tscn" id="3_gqidu"]
+[ext_resource type="Texture2D" uid="uid://ce5mb7g0ogylx" path="res://Materials/Sky/citrus_orchard_road_puresky_4k.exr" id="4_glouy"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uqtxj"]
 albedo_texture = ExtResource("1_uqtxj")
@@ -15,6 +16,16 @@ material = SubResource("StandardMaterial3D_46qel")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2y0my"]
 size = Vector3(2, 2, 0.1)
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_52h6j"]
+panorama = ExtResource("4_glouy")
+
+[sub_resource type="Sky" id="Sky_46qel"]
+sky_material = SubResource("PanoramaSkyMaterial_52h6j")
+
+[sub_resource type="Environment" id="Environment_2y0my"]
+background_mode = 2
+sky = SubResource("Sky_46qel")
 
 [node name="Mundo" type="Node3D" unique_id=1672293744]
 
@@ -164,3 +175,6 @@ transform = Transform3D(-0.04999999, -1.1874809e-05, -2.7463355e-05, -1.187358e-
 
 [node name="Player" parent="." unique_id=1608849890 instance=ExtResource("3_gqidu")]
 transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0.05, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=863800901]
+environment = SubResource("Environment_2y0my")
