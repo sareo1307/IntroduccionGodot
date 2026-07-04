@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://7hn25igvds42"]
+
+[ext_resource type="Texture2D" uid="uid://bniuaga86f3fp" path="res://Textures/twig.png" id="1_bt6wg"]
+[ext_resource type="Texture2D" uid="uid://d0miniyjma0yx" path="res://Textures/bark_normal.png" id="2_5d8ak"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.568
+alpha_antialiasing_mode = 0
+cull_mode = 2
+albedo_texture = ExtResource("1_bt6wg")
+normal_scale = -8.71
+normal_texture = ExtResource("2_5d8ak")

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://clraytyru5wid"]
+
+[ext_resource type="Material" uid="uid://cal0ws4kkir51" path="res://Materials/mat.tres" id="1_t1c0s"]
+[ext_resource type="Material" uid="uid://7hn25igvds42" path="res://Materials/twig_mat.tres" id="2_n2gbn"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2y0my"]
+radius = 0.1899414
+
+[node name="Tree3D" type="Tree3D" unique_id=1433203193]
+seed = 287
+material_trunk = ExtResource("1_t1c0s")
+material_twig = ExtResource("2_n2gbn")
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1410416052]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=2043331186]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015920252, 0.84881544, 0.008810461)
+shape = SubResource("CapsuleShape3D_2y0my")
