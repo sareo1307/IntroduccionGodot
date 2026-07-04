@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://clraytyru5wid" path="res://Scenes/tree_3d.tscn" id="1_4cw5y"]
 [ext_resource type="Texture2D" uid="uid://cgphrbo0diibg" path="res://Textures/rocky_terrain_02_diff_4k.jpg" id="1_uqtxj"]
+[ext_resource type="PackedScene" uid="uid://cpxle3usnkhqf" path="res://Scenes/player.tscn" id="3_gqidu"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uqtxj"]
 albedo_texture = ExtResource("1_uqtxj")
@@ -17,13 +18,13 @@ size = Vector3(2, 2, 0.1)
 
 [node name="Mundo" type="Node3D" unique_id=1672293744]
 
-[node name="Area3D" type="Area3D" parent="." unique_id=1981080296]
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1521023730]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D" unique_id=118561765]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=118561765]
 material_override = SubResource("StandardMaterial3D_uqtxj")
 mesh = SubResource("PlaneMesh_mvqpd")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1819966173]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1819966173]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, -0.05, 0)
 shape = SubResource("BoxShape3D_2y0my")
 
@@ -160,3 +161,6 @@ transform = Transform3D(-0.04999999, -1.1874809e-05, -2.7463355e-05, -1.187358e-
 [node name="Tree3D24" parent="Tree" unique_id=1365668723 instance=ExtResource("1_4cw5y")]
 seed = 210
 transform = Transform3D(-0.04999999, -1.1874809e-05, -2.7463355e-05, -1.187358e-05, 0.049999993, -2.2573404e-06, 2.7463882e-05, -2.2508636e-06, -0.04999998, 0.0018487573, 0, 0.2562409)
+
+[node name="Player" parent="." unique_id=1608849890 instance=ExtResource("3_gqidu")]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0.05, 0)
