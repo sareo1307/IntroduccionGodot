@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cgphrbo0diibg" path="res://Textures/rocky_terrain_02_diff_4k.jpg" id="1_uqtxj"]
 [ext_resource type="PackedScene" uid="uid://cpxle3usnkhqf" path="res://Scenes/player.tscn" id="3_gqidu"]
 [ext_resource type="Texture2D" uid="uid://ce5mb7g0ogylx" path="res://Materials/Sky/citrus_orchard_road_puresky_4k.exr" id="4_glouy"]
+[ext_resource type="PackedScene" uid="uid://dpgltgb57an46" path="res://Scenes/explosive.tscn" id="5_yf8a8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uqtxj"]
 albedo_texture = ExtResource("1_uqtxj")
@@ -178,3 +179,6 @@ transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0.05, 0)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=863800901]
 environment = SubResource("Environment_2y0my")
+
+[node name="Explosive" parent="." unique_id=198487663 instance=ExtResource("5_yf8a8")]
+transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0.10087022, 0.007801625, 0.36302406)
