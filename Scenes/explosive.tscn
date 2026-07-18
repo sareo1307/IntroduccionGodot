@@ -24717,11 +24717,11 @@ _data = {
 script = ExtResource("3_aye71")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=80309586]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 1.0581411, 0.3041377)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 1.0581411, 0.36320162)
 shape = SubResource("CapsuleShape3D_2y0my")
 
 [node name="Armature" type="Node3D" parent="." unique_id=1178440131]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0.3041377)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0.36320162)
 
 [node name="GeneralSkeleton" type="Skeleton3D" parent="Armature" unique_id=1888625032]
 unique_name_in_owner = true

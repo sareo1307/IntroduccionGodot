@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://clraytyru5wid" path="res://Scenes/tree_3d.tscn" id="1_4cw5y"]
 [ext_resource type="Texture2D" uid="uid://cgphrbo0diibg" path="res://Textures/rocky_terrain_02_diff_4k.jpg" id="1_uqtxj"]
 [ext_resource type="Texture2D" uid="uid://ce5mb7g0ogylx" path="res://Materials/Sky/citrus_orchard_road_puresky_4k.exr" id="4_glouy"]
+[ext_resource type="PackedScene" uid="uid://r6e8qfa4w8rs" path="res://Scenes/NPC.tscn" id="5_qxsm7"]
 [ext_resource type="PackedScene" uid="uid://dpgltgb57an46" path="res://Scenes/explosive.tscn" id="5_yf8a8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uqtxj"]
@@ -178,3 +179,6 @@ environment = SubResource("Environment_2y0my")
 
 [node name="Explosive" parent="." unique_id=198487663 instance=ExtResource("5_yf8a8")]
 transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0.10087022, 0.000968921, 0.36302406)
+
+[node name="CharacterBody3D" parent="." unique_id=50965792 instance=ExtResource("5_qxsm7")]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0.091109656, 0.0020375683, 0.26035684)
