@@ -2,7 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://clraytyru5wid" path="res://Scenes/tree_3d.tscn" id="1_4cw5y"]
 [ext_resource type="Texture2D" uid="uid://cgphrbo0diibg" path="res://Textures/rocky_terrain_02_diff_4k.jpg" id="1_uqtxj"]
-[ext_resource type="PackedScene" uid="uid://cpxle3usnkhqf" path="res://Scenes/player.tscn" id="3_gqidu"]
 [ext_resource type="Texture2D" uid="uid://ce5mb7g0ogylx" path="res://Materials/Sky/citrus_orchard_road_puresky_4k.exr" id="4_glouy"]
 [ext_resource type="PackedScene" uid="uid://dpgltgb57an46" path="res://Scenes/explosive.tscn" id="5_yf8a8"]
 
@@ -174,11 +173,8 @@ transform = Transform3D(-0.04999999, -1.1874809e-05, -2.7463355e-05, -1.187358e-
 seed = 210
 transform = Transform3D(-0.04999999, -1.1874809e-05, -2.7463355e-05, -1.187358e-05, 0.049999993, -2.2573404e-06, 2.7463882e-05, -2.2508636e-06, -0.04999998, 0.0018487573, 0, 0.2562409)
 
-[node name="Player" parent="." unique_id=1608849890 instance=ExtResource("3_gqidu")]
-transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0.05, 0)
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=863800901]
 environment = SubResource("Environment_2y0my")
 
 [node name="Explosive" parent="." unique_id=198487663 instance=ExtResource("5_yf8a8")]
-transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0.10087022, 0.007801625, 0.36302406)
+transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0.10087022, 0.000968921, 0.36302406)
