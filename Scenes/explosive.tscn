@@ -1,20 +1,22 @@
 [gd_scene format=3 uid="uid://dpgltgb57an46"]
 
 [ext_resource type="PackedScene" uid="uid://br7vequfb0gts" path="res://ExplosiveAnim/Explosive.glb" id="1_lskqf"]
+[ext_resource type="Script" uid="uid://hmge55no6eym" path="res://Scenes/explosive.gd" id="2_q80op"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2y0my"]
 radius = 0.6977539
 height = 2.7685547
 
 [node name="Explosive" unique_id=198487663 instance=ExtResource("1_lskqf")]
+script = ExtResource("2_q80op")
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="Armature" parent_id_path=PackedInt32Array(1178440131) index="0" unique_id=318790351]
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." index="0" unique_id=318790351]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Armature/CharacterBody3D" index="0" unique_id=80309586]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" index="0" unique_id=80309586]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0581411, 0)
 shape = SubResource("CapsuleShape3D_2y0my")
 
-[node name="GeneralSkeleton" parent="Armature" parent_id_path=PackedInt32Array(1178440131) index="1" unique_id=1888625032]
+[node name="GeneralSkeleton" parent="Armature" parent_id_path=PackedInt32Array(1178440131) index="0" unique_id=1888625032]
 bones/0/rotation = Quaternion(9.313226e-10, 2.910383e-11, -9.313226e-10, 1)
 bones/1/position = Vector3(-0.04266701, 1.1650906, 0.0016730885)
 bones/1/rotation = Quaternion(0.043214306, -0.48716336, 0.061128546, 0.8700963)
@@ -69,3 +71,5 @@ bones/49/rotation = Quaternion(0.011642122, 0.23324081, 0.95444226, -0.18575028)
 bones/50/rotation = Quaternion(0.32869387, 0.9442347, -0.0007083709, -0.019508991)
 bones/51/rotation = Quaternion(0.13007781, 0.8104639, -0.5709913, -0.01404104)
 bones/52/rotation = Quaternion(0.02135421, 0.9995667, 0.013255924, 0.01532535)
+
+[node name="Camera3D" type="Camera3D" parent="." index="3" unique_id=1681437742]
